@@ -1,0 +1,32 @@
+{
+  "name": "productwitch",
+  "version": "1.0.0",
+  "description": "Product Hunt report generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npx puppeteer browsers install chrome",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "pnpm install && pnpm run postinstall"
+  },
+  "keywords": [
+    "product hunt",
+    "report",
+    "generator",
+    "ai"
+  ],
+  "author": "Feng Liu",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.3",
+    "ai": "^4.1.44",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "puppeteer": "^24.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
