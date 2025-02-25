@@ -1,5 +1,11 @@
 {
   "version": 2,
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "(.*)", "dest": "index.js" }]
+  "routes": [{ "src": "(.*)", "dest": "index.js" }],
+  "crons": [
+    {
+      "path": "/api/v1/health",
+      "schedule": "0 0 * * *"
+    }
+  ]
 }

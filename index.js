@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Health check endpoint
-app.get("/health", (req, res) => {
+app.get("/api/v1/health", (req, res) => {
   res.json({ status: "ok" });
 });
 
